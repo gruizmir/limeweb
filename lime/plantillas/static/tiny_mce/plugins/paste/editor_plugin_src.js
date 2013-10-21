@@ -107,7 +107,7 @@
 					t._insertPlainText(o.content);
 
 					if (!getParam(ed, "paste_text_sticky")) {
-						ed.pasteAsPlainText = true;
+						ed.pasteAsPlainText = false;
 						ed.controlManager.setActive("pastetext", false);
 					}
 				} else {

@@ -122,18 +122,15 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Uncomment the next line to enable the admin:
-    'django.contrib.admin',
-    # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
     'main',
     'blog',
     'event',
     'opportunity',
     'grappelli',
     'filebrowser',
-    'django.contrib.admin',
     'tinymce',
+    'django.contrib.admin',
+    'django.contrib.admindocs',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -181,10 +178,10 @@ AVATAR_STORAGE_DIR = 'media/avatars'
 TINYMCE_JS_URL =  "/static/tiny_mce/tiny_mce.js"
 TINYMCE_JS_ROOT =  "/static/tiny_mce"
 TINYMCE_DEFAULT_CONFIG = {
-'plugins': "paste", 
-'theme': "advanced",
-'theme_advanced_toolbar_location' : "top",
-'theme_advanced_buttons1': "bold,italic,underline,separator,bullist,separator,outdent,indent,separator,undo,redo",
-'theme_advanced_buttons2': "",
-'theme_advanced_buttons3': "",
+    'plugins': "table,spellchecker,paste,searchreplace",
+    'theme': "advanced",
+    'theme_advanced_toolbar_location' : "top",
+    'theme_advanced_buttons1': "bold,italic,underline,separator,bullist,separator,outdent,indent,separator,undo,redo,link,image",
+    'theme_advanced_buttons2': "",
+    'theme_advanced_buttons3': "",
 }
